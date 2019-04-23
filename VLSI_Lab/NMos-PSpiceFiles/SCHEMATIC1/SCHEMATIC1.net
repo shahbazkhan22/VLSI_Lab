@@ -1,0 +1,6 @@
+* source NMOS
+V_V3         N00473 0 1.8Vdc
+V_V4         N00536 0 1.8Vdc
+M_M1         N00536 N00473 0 0 MbreakN  
++ L=180n  
++ W=180n         

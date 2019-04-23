@@ -1,0 +1,11 @@
+* source CMOSINVERTER
+M_M1         N00192 N00240 0 0 NMOS  
++ L=180n  
++ W=180n         
+M_M2         N00192 0 N00361 N00361 Mbreakp  
++ L=180n  
++ W=270n         
+C_C1         N00192 0  3.5f  TC=0,0 
+V_V1         N00240 0 DC 1.8 
++PULSE 0 1.8 0 0.5n 0.5n 5n 10n
+V_V2         N00361 0 1.8Vdc

@@ -1,0 +1,20 @@
+** Profile: "SCHEMATIC1-CmosInv"  [ C:\Users\shahb\Documents\cmosinverter-pspicefiles\schematic1\cmosinv.sim ] 
+
+** Creating circuit file "CmosInv.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../cmosinverter-pspicefiles/cmosinverter.lib" 
+* From [PSPICE NETLIST] section of C:\Users\shahb\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN V_V1 0 1.8 0.01 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END

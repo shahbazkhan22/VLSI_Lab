@@ -1,0 +1,9 @@
+* source RESISITIVELOAD
+M_M1         N00188 N00145 0 0 Mbreakn  
++ L=180n  
++ W=180n         
+R_R1         N00188 N000731 30k
+C_C1         0 N00188 3.5f TC=0
+V_V2         N000731 0 1.8
+V_V3         N00145 0  
++PULSE 0 1.8 0 0.5n 0.5n 5n 10nm

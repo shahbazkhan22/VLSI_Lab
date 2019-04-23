@@ -1,0 +1,4 @@
+* source PMOS
+M_M1         0 N00105 N00112 N00112 Unknown000           
+V_V1         N00112 N00105 1.2Vdc
+V_V2         N00112 0 1.8Vdc

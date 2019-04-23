@@ -1,0 +1,48 @@
+
+**** 02/26/19 00:53:11 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-PMos_1"  [ C:\Users\shahb\Documents\PMos_2-PSpiceFiles\SCHEMATIC1\PMos_1.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "PMos_1.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../pmos_2-pspicefiles/pmos_2.lib" 
+* From [PSPICE NETLIST] section of C:\Users\shahb\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN V_V1 -1.8 0 0.01 
++ LIN V_V1 1.5 1.8 0.01 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source PMOS_2
+M_M1         N00187 N00173 N00182 N00182 MbreakP  
++ L=180n  
++ W=180n         
+V_V1         0 N00173 1.2Vdc
+V_V2         N00182 0 1.8Vdc
+V_V3         N00187 0 0.8Vdc
+
+**** RESUMING PMos_1.cir ****
+.END
+
+
+ERROR(ORPSIM-15051): A device may appear in .DC and .STEP commands only once
+

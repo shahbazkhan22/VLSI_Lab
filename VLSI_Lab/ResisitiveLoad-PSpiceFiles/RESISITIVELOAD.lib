@@ -1,0 +1,24 @@
+* PSpice Model Editor - Version 16.6.0
+
+*$
+.model Mbreakn NMOS
++ LEVEL = 3
+ + VTO = 0.45
+ + TOX = 2.5E-09
+ + NSUB = 1.0E+18
+ + NFS = 8.5E+12
+ + XJ = 7.5E-8
+ + LD = 1.25e-8
+ + UO = 255
+ + VMAX = 1.7E+05
+ + THETA = 0.29
+ + ETA = 0.9E-02
+ + KAPPA = 0.08
+ + GAMMA = 0.40
+ + RSH = 500
+ + CGSO = 3.86872e-10
+ + CGDO = 3.86872e-10
+ + CGBO = 0.0 
+ + CJ = 4.09573e-3
+ + CJSW = 2.45744e-10
+*$

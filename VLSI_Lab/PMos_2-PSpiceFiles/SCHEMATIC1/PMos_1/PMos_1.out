@@ -1,0 +1,117 @@
+
+**** 04/09/19 12:28:42 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-PMos_1"  [ C:\Users\shahb\Documents\pmos_2-pspicefiles\schematic1\pmos_1.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "PMos_1.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../pmos_2-pspicefiles/pmos_2.lib" 
+* From [PSPICE NETLIST] section of C:\Users\shahb\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN V_V3 0 1.8 0.1 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source PMOS_2
+M_M1         N00187 N00173 N00182 N01280 MbreakP  
++ L=1u  
++ W=1u         
+V_V1         N00173 0 0.7Vdc
+V_V2         N00182 0 1.8Vdc
+V_V3         N00187 0 0.7Vdc
+V_V4         N01280 N00182 0Vdc
+
+**** RESUMING PMos_1.cir ****
+.END
+
+WARNING(ORPSIM-15676): LAMBDA for MOSFET model MbreakP is unusually large and might cause nonconvergence
+
+**** 04/09/19 12:28:42 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-PMos_1"  [ C:\Users\shahb\Documents\pmos_2-pspicefiles\schematic1\pmos_1.sim ] 
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               MbreakP         
+               PMOS            
+       LEVEL    1            
+           L  100.000000E-06 
+           W  100.000000E-06 
+          LD   90.000000E-09 
+         VTO    -.7          
+          KP   38.368260E-06 
+       GAMMA     .4          
+         PHI     .8          
+      LAMBDA     .2          
+          IS   10.000000E-15 
+          JS    5.000000E-09 
+          PB     .9          
+        PBSW     .9          
+          CJ  940.000000E-06 
+        CJSW    3.200000E-12 
+        MJSW     .3          
+        CGSO    0            
+        CGDO  300.000000E-12 
+        CGBO    0            
+        NSUB  500.000000E+12 
+         TOX    9.000000E-09 
+          XJ    0            
+          UO  100            
+       UCRIT   10.000000E+03 
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+WARNING(ORPSIM-15676): LAMBDA for MOSFET model MbreakP is unusually large and might cause nonconvergence
+
+WARNING(ORPSIM-15676): LAMBDA for MOSFET model MbreakP is unusually large and might cause nonconvergence
+
+
+          JOB CONCLUDED
+
+**** 04/09/19 12:28:42 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-PMos_1"  [ C:\Users\shahb\Documents\pmos_2-pspicefiles\schematic1\pmos_1.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .02
+

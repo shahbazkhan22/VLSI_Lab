@@ -1,0 +1,223 @@
+
+**** 02/27/19 07:41:28 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-CmosInv"  [ C:\Users\shahb\Documents\cmosinverter-pspicefiles\schematic1\cmosinv.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "CmosInv.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../cmosinverter-pspicefiles/cmosinverter.lib" 
+* From [PSPICE NETLIST] section of C:\Users\shahb\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN V_V1 0 1.8 0.01 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source CMOSINVERTER
+M_M1         N00192 N00240 0 0 NMOS  
++ L=180n  
++ W=180n         
+M_M2         N00192 0 N00361 N00361 Mbreakp  
++ L=180n  
++ W=270n         
+C_C1         N00192 0  3.5f  TC=0,0 
+V_V1         N00240 0 DC 1.8 
++PULSE 0 1.8 0 0.5n 0.5n 5n 10n
+V_V2         N00361 0 1.8Vdc
+
+**** RESUMING CmosInv.cir ****
+.END
+
+WARNING(ORPSIM-15235): Mosfet M_M1, model NMOS: Pd = 0 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_M1, model NMOS: Ps = 0 is less than W
+
+WARNING(ORPSIM-15236): Parameter XW in model NMOS is invalid - Ignored
+
+WARNING(ORPSIM-15235): Mosfet M_M2, model Mbreakp: Pd = 0 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_M2, model Mbreakp: Ps = 0 is less than W
+
+WARNING(ORPSIM-15236): Parameter XW in model Mbreakp is invalid - Ignored
+
+INFO(ORPSIM-15454): Model NMOS: Using BSIM VERSION 3.1 or lower
+
+INFO(ORPSIM-15454): Model Mbreakp: Using BSIM VERSION 3.1 or lower
+
+**** 02/27/19 07:41:28 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-CmosInv"  [ C:\Users\shahb\Documents\cmosinverter-pspicefiles\schematic1\cmosinv.sim ] 
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               NMOS            Mbreakp         
+               NMOS            PMOS            
+  T_Measured   27              27            
+   T_Current   27              27            
+       LEVEL    7               7            
+           L  100.000000E-06  100.000000E-06 
+           W  100.000000E-06  100.000000E-06 
+         VTO     .375077        -.393673     
+          KP  505.338100E-06  505.338100E-06 
+       GAMMA    0               0            
+      LAMBDA    0               0            
+         RSH    7.1             8.2          
+          IS    1.000000E-15    1.000000E-15 
+          JS  100.000000E-06  100.000000E-06 
+          PB     .8              .856064     
+        PBSW     .8              .912314     
+          CJ  955.034500E-06    1.180017E-03 
+        CJSW  208.325100E-12  204.646300E-12 
+          MJ     .376295         .414682     
+        MJSW     .126948         .316175     
+        CGSO  670.000000E-12  747.000000E-12 
+        CGDO  670.000000E-12  747.000000E-12 
+        CGBO    1.000000E-12    1.000000E-12 
+         TOX    4.100000E-09    4.100000E-09 
+          XJ  100.000000E-09  100.000000E-09 
+       UCRIT   10.000000E+03   10.000000E+03 
+       DELTA     .01             .01         
+      DIOMOD    2               2            
+          K1     .584203         .575073     
+          K2    1.245202E-03     .023593     
+        LETA    0               0            
+        WETA    0               0            
+          U0  296.8451        112.5107       
+       XPART     .5              .5          
+        VTH0     .375077        -.393673     
+          K3    1.000000E-03     .159009     
+          W0  100.000000E-09    1.000000E-06 
+         NLX  159.784600E-09  103.399900E-09 
+        DVT0    1.302298         .556098     
+        DVT1     .402187         .249012     
+          UA   -1.179955E-09    1.450720E-09 
+          UB    2.326160E-18    1.195045E-21 
+          UC   75.933010E-12 -100.000000E-12 
+        VSAT  174.714700E+03  116.853500E+03 
+        RDSW  105             198.7483       
+        VOFF    -.094802        -.097983     
+     NFACTOR    2.186007        1.962407     
+        PCLM    1.706259        1.472893     
+      PDIBL1     .232055        2.138043E-03 
+      PDIBL2    1.670588E-03   -9.966066E-06 
+       DROUT     .838861      427.612800E-06 
+      PSCBE1   19.042630E+09   48.501670E+09 
+      PSCBE2   15.469390E-09  500.000000E-12 
+          A0    2               1.721198     
+          A1  788.552200E-06     .232847     
+          A2     .311934         .3          
+       NPEAK  235.490000E+15  415.890000E+15 
+         LDD    0               0            
+        LITL   35.071360E-09   35.071360E-09 
+         UA1    4.310000E-09    4.310000E-09 
+         UB1   -7.610000E-18   -7.610000E-18 
+         UC1  -56.000000E-12  -56.000000E-12 
+        KETA   -6.860244E-03     .020183     
+        ETA0    1.991317E-03  728.277200E-06 
+        ETAB   60.289750E-06 -381.857200E-06 
+         K3B     .029559        4.268702     
+        DVT2    7.631374E-03     .1          
+        DSUB     .02179         1.518344E-03 
+      MOBMOD    1               1            
+         AGS     .452647         .380693     
+       DVT1W    0               0            
+       DVT2W    0               0            
+        PRWG     .4826           .5          
+        PRWB    -.2             -.497183     
+     PDIBLCB    -.1            -1.000000E-03 
+         DWG   -2.610453E-09  -19.492530E-09 
+         DWB   -4.344942E-09   -2.824041E-09 
+          B0   55.069620E-09  429.625200E-09 
+          B1    2.640458E-06    1.288698E-06 
+        LINT   20.459190E-09   29.432060E-09 
+        WINT    4.410779E-09                 
+         DLC   20.459190E-09   29.432060E-09 
+         DWC    4.410779E-09    0            
+          CF    0               0            
+        NOIA  100.000000E+18    9.900001E+18 
+        NOIB   50.000000E+03    2.400000E+03 
+        NOIC   -1.400000E-12    1.400000E-12 
+       LKETA   -1.266704E-03   -2.016897E-03 
+       WKETA   -2.040084E-03     .024689     
+       PVSAT    2.000000E+03   50            
+       PKETA   -3.350276E-03   -3.316832E-03 
+       PVTH0   -2.369258E-03  845.659800E-06 
+         PUA  -25.693400E-12  -55.164600E-12 
+         PUB                    1.000000E-21 
+         PU0    1.093298       -1.508959     
+       PRDSW   -1.209169        8.483825     
+       PETA0  100.000000E-06  100.000000E-06 
+         PK2    1.845281E-03    1.338191E-03 
+         VTM     .025864         .025864     
+     VERSION    3.1             3.1          
+       PBSWG     .8              .912314     
+       MJSWG     .126948         .316175     
+       CJSWG  330.000000E-12  422.000000E-12 
+
+
+WARNING(ORPSIM-15235): Mosfet M_M1, model NMOS: Pd = 0 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_M1, model NMOS: Ps = 0 is less than W
+
+WARNING(ORPSIM-15236): Parameter XW in model NMOS is invalid - Ignored
+
+WARNING(ORPSIM-15235): Mosfet M_M2, model Mbreakp: Pd = 0 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_M2, model Mbreakp: Ps = 0 is less than W
+
+WARNING(ORPSIM-15236): Parameter XW in model Mbreakp is invalid - Ignored
+
+WARNING(ORPSIM-15235): Mosfet M_M1, model NMOS: Pd = 0 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_M1, model NMOS: Ps = 0 is less than W
+
+WARNING(ORPSIM-15236): Parameter XW in model NMOS is invalid - Ignored
+
+WARNING(ORPSIM-15235): Mosfet M_M2, model Mbreakp: Pd = 0 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_M2, model Mbreakp: Ps = 0 is less than W
+
+WARNING(ORPSIM-15236): Parameter XW in model Mbreakp is invalid - Ignored
+
+
+          JOB CONCLUDED
+
+**** 02/27/19 07:41:28 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-CmosInv"  [ C:\Users\shahb\Documents\cmosinverter-pspicefiles\schematic1\cmosinv.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .02
+

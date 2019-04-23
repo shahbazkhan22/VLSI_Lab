@@ -1,0 +1,44 @@
+
+**** 01/16/19 11:23:52 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-PMos"  [ C:\Users\shahb\Documents\PMos-PSpiceFiles\SCHEMATIC1\PMos.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "PMos.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../pmos-pspicefiles/pmos.lib" 
+* From [PSPICE NETLIST] section of C:\Users\shahb\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN V_V1 0 1.8 .01 
++ LIN V_V2 0 1.2 0.6 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source PMOS
+M_M1         0 N00105 N00112 N00112 Unknown000           
+V_V1         N00112 N00105 1.2Vdc
+V_V2         N00112 0 1.8Vdc
+
+**** RESUMING PMos.cir ****
+.END
+
+ERROR(ORPSIM-15113): Model Unknown000 used by M_M1 is undefined
+

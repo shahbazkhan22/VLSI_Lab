@@ -1,0 +1,146 @@
+
+**** 03/28/19 20:28:25 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Transient"  [ C:\Users\shahb\Documents\resisitiveload-pspicefiles\schematic1\transient.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Transient.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../resisitiveload-pspicefiles/resisitiveload.lib" 
+* From [PSPICE NETLIST] section of C:\Users\shahb\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 20ns 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source RESISITIVELOAD
+M_M1         N00188 N00145 0 0 Mbreakn  
++ L=180n  
++ W=180n         
+R_R1         N00188 N000731 30k
+C_C1         0 N00188 3.5f TC=0
+V_V2         N000731 0 1.8
+V_V3         N00145 0  
++PULSE 0 1.8 0 0.5n 0.5n 5n 10nm
+
+**** RESUMING Transient.cir ****
+.END
+
+**** 03/28/19 20:28:25 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Transient"  [ C:\Users\shahb\Documents\resisitiveload-pspicefiles\schematic1\transient.sim ] 
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Mbreakn         
+               NMOS            
+       LEVEL    3            
+           L  100.000000E-06 
+           W  100.000000E-06 
+          LD   12.500000E-09 
+         VTO     .45         
+          KP  352.220700E-06 
+       GAMMA     .4          
+         PHI     .933651     
+      LAMBDA    0            
+         RSH  500            
+          IS   10.000000E-15 
+          JS    0            
+          PB     .8          
+        PBSW     .8          
+          CJ    4.095730E-03 
+        CJSW  245.744000E-12 
+        CGSO  386.872000E-12 
+        CGDO  386.872000E-12 
+        CGBO    0            
+        NSUB    1.000000E+18 
+         NFS    8.500000E+12 
+         TOX    2.500000E-09 
+          XJ   75.000000E-09 
+          UO  255            
+       UCRIT   10.000000E+03 
+        VMAX  170.000000E+03 
+       THETA     .29         
+         ETA    9.000000E-03 
+       KAPPA     .08         
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+**** 03/28/19 20:28:25 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Transient"  [ C:\Users\shahb\Documents\resisitiveload-pspicefiles\schematic1\transient.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00145)    0.0000 (N00188)    1.7992 (N000731)    1.8000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2        -2.539E-08
+    V_V3         0.000E+00
+
+    TOTAL POWER DISSIPATION   4.57E-08  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 03/28/19 20:28:25 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Transient"  [ C:\Users\shahb\Documents\resisitiveload-pspicefiles\schematic1\transient.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .03
+

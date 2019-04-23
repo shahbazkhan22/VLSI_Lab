@@ -1,0 +1,299 @@
+
+**** 02/25/19 12:16:27 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Nmos"  [ C:\Users\shahb\Documents\nmos-pspicefiles\schematic1\nmos.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Nmos.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../nmos-pspicefiles/nmos.lib" 
+* From [PSPICE NETLIST] section of C:\Users\shahb\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN V_V3 0 1.8 0.01 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source NMOS
+V_V3         0 N00473 0.9Vdc
+V_V4         0 N00536 -1.8Vdc
+V_V5         0 N00949 0Vdc
+M_M1         N00536 N00473 0 N00949 MbreakP  
++ L=180n  
++ W=180n         
+
+**** RESUMING Nmos.cir ****
+.END
+
+WARNING(ORPSIM-15676): LAMBDA for MOSFET model MbreakP is unusually large and might cause nonconvergence
+
+**** 02/25/19 12:16:27 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Nmos"  [ C:\Users\shahb\Documents\nmos-pspicefiles\schematic1\nmos.sim ] 
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               MbreakP         
+               PMOS            
+       LEVEL    1            
+           L  100.000000E-06 
+           W  100.000000E-06 
+          LD   90.000000E-09 
+         VTO    -.7          
+          KP   38.368260E-06 
+       GAMMA     .4          
+         PHI     .8          
+      LAMBDA     .2          
+          IS   10.000000E-15 
+          JS    5.000000E-09 
+          PB     .9          
+        PBSW     .9          
+          CJ  940.000000E-06 
+        CJSW    3.200000E-12 
+        MJSW     .3          
+        CGSO    0            
+        CGDO  300.000000E-12 
+        CGBO    0            
+        NSUB  500.000000E+12 
+         TOX    9.000000E-09 
+          XJ    0            
+          UO  100            
+       UCRIT   10.000000E+03 
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+WARNING(ORPSIM-15676): LAMBDA for MOSFET model MbreakP is unusually large and might cause nonconvergence
+
+WARNING(ORPSIM-15676): LAMBDA for MOSFET model MbreakP is unusually large and might cause nonconvergence
+
+ERROR -- Convergence problem in DC sweep
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00473)    0.0000 (N00536)    1.4293 (N00949)    0.0000 
+
+
+  These supply currents failed to converge:
+
+    I(V_V5)                   =   -10.00GA  \   -10.00GA
+
+**** Interrupt ****
+**** Param: RELTOL = 0.001
+**** Param: ABSTOL = 1e-012
+**** Param: VNTOL = 1e-006
+**** Param: GMIN = 1e-012
+**** Param: TSTOP = 1e-009
+**** Param: TMAX = 0
+**** Param: ITL1 = 150
+**** Param: ITL2 = 20
+**** Param: ITL4 = 10
+**** Param: AutoConverge = 0
+**** Param: AutoConverge.ITL1 = 1000
+**** Param: AutoConverge.ITL2 = 1000
+**** Param: AutoConverge.ITL4 = 1000
+**** Param: AutoConverge.RELTOL = 0.05
+**** Param: AutoConverge.ABSTOL = 0.001
+**** Param: AutoConverge.VNTOL = 0.001
+**** Param: AutoConverge.PIVTOL = 1e-010
+**** Param: ADVCONV = 1
+**** Param: Current_Simulation = 0
+**** Param: METHOD = 0
+**** Param: TRTOL = 7
+**** Param: STEPGMIN = 0
+**** Param: GMINSTEPS = 0
+**** Param: ITL6 = 0
+**** Param: NOSTEPDEP = 0
+**** Param: PTRANSTEP = 0
+**** Param: GMINSRC = 0
+**** Param: PSEUDOTRAN = 0
+**** Param: NOSTEPSRC = 0
+
+ERROR -- Convergence problem in DC sweep
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00473)    -.0079 (N00536)    1.4293 (N00949)    0.0000 
+
+
+  These supply currents failed to converge:
+
+    I(V_V5)                   =   -10.00GA  \   -10.00GA
+
+**** Interrupt ****
+**** Param: RELTOL = 0.001
+**** Param: ABSTOL = 1e-012
+**** Param: VNTOL = 1e-006
+**** Param: GMIN = 1e-012
+**** Param: TSTOP = 1e-009
+**** Param: TMAX = 0
+**** Param: ITL1 = 150
+**** Param: ITL2 = 20
+**** Param: ITL4 = 10
+**** Param: AutoConverge = 0
+**** Param: AutoConverge.ITL1 = 1000
+**** Param: AutoConverge.ITL2 = 1000
+**** Param: AutoConverge.ITL4 = 1000
+**** Param: AutoConverge.RELTOL = 0.05
+**** Param: AutoConverge.ABSTOL = 0.001
+**** Param: AutoConverge.VNTOL = 0.001
+**** Param: AutoConverge.PIVTOL = 1e-010
+**** Param: ADVCONV = 1
+**** Param: Current_Simulation = 0
+**** Param: METHOD = 0
+**** Param: TRTOL = 7
+**** Param: STEPGMIN = 0
+**** Param: GMINSTEPS = 0
+**** Param: ITL6 = 0
+**** Param: NOSTEPDEP = 0
+**** Param: PTRANSTEP = 0
+**** Param: GMINSRC = 0
+**** Param: PSEUDOTRAN = 0
+**** Param: NOSTEPSRC = 0
+
+ERROR -- Convergence problem in DC sweep
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00473)    -.0159 (N00536)    1.4293 (N00949)    0.0000 
+
+
+  These supply currents failed to converge:
+
+    I(V_V5)                   =   -10.00GA  \   -10.00GA
+
+**** Interrupt ****
+**** Param: RELTOL = 0.001
+**** Param: ABSTOL = 1e-012
+**** Param: VNTOL = 1e-006
+**** Param: GMIN = 1e-012
+**** Param: TSTOP = 1e-009
+**** Param: TMAX = 0
+**** Param: ITL1 = 150
+**** Param: ITL2 = 20
+**** Param: ITL4 = 10
+**** Param: AutoConverge = 0
+**** Param: AutoConverge.ITL1 = 1000
+**** Param: AutoConverge.ITL2 = 1000
+**** Param: AutoConverge.ITL4 = 1000
+**** Param: AutoConverge.RELTOL = 0.05
+**** Param: AutoConverge.ABSTOL = 0.001
+**** Param: AutoConverge.VNTOL = 0.001
+**** Param: AutoConverge.PIVTOL = 1e-010
+**** Param: ADVCONV = 1
+**** Param: Current_Simulation = 0
+**** Param: METHOD = 0
+**** Param: TRTOL = 7
+**** Param: STEPGMIN = 0
+**** Param: GMINSTEPS = 0
+**** Param: ITL6 = 0
+**** Param: NOSTEPDEP = 0
+**** Param: PTRANSTEP = 0
+**** Param: GMINSRC = 0
+**** Param: PSEUDOTRAN = 0
+**** Param: NOSTEPSRC = 0
+
+ERROR -- Convergence problem in DC sweep
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00473)    -.0238 (N00536)    1.4293 (N00949)    0.0000 
+
+
+  These supply currents failed to converge:
+
+    I(V_V5)                   =   -10.00GA  \   -10.00GA
+
+**** Interrupt ****
+**** Param: RELTOL = 0.001
+**** Param: ABSTOL = 1e-012
+**** Param: VNTOL = 1e-006
+**** Param: GMIN = 1e-012
+**** Param: TSTOP = 1e-009
+**** Param: TMAX = 0
+**** Param: ITL1 = 150
+**** Param: ITL2 = 20
+**** Param: ITL4 = 10
+**** Param: AutoConverge = 0
+**** Param: AutoConverge.ITL1 = 1000
+**** Param: AutoConverge.ITL2 = 1000
+**** Param: AutoConverge.ITL4 = 1000
+**** Param: AutoConverge.RELTOL = 0.05
+**** Param: AutoConverge.ABSTOL = 0.001
+**** Param: AutoConverge.VNTOL = 0.001
+**** Param: AutoConverge.PIVTOL = 1e-010
+**** Param: ADVCONV = 1
+**** Param: Current_Simulation = 0
+**** Param: METHOD = 0
+**** Param: TRTOL = 7
+**** Param: STEPGMIN = 0
+**** Param: GMINSTEPS = 0
+**** Param: ITL6 = 0
+**** Param: NOSTEPDEP = 0
+**** Param: PTRANSTEP = 0
+**** Param: GMINSRC = 0
+**** Param: PSEUDOTRAN = 0
+**** Param: NOSTEPSRC = 0
+
+ERROR -- Convergence problem in DC sweep
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00473)    -.0318 (N00536)    1.4293 (N00949)    0.0000 
+
+
+  These supply currents failed to converge:
+
+    I(V_V5)                   =   -10.00GA  \   -10.00GA
+
+**** Interrupt ****

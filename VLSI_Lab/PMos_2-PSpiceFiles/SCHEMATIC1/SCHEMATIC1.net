@@ -1,0 +1,8 @@
+* source PMOS_2
+M_M1         N00187 N00173 N00182 N01280 MbreakP  
++ L=1u  
++ W=1u         
+V_V1         N00173 0 0.7Vdc
+V_V2         N00182 0 1.8Vdc
+V_V3         N00187 0 0.7Vdc
+V_V4         N01280 N00182 0Vdc
